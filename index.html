@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Real Master • Master of Technology</title>
+
+    <meta
+      name="description"
+      content="Real Master - Tecnologia, acessórios para celular e expositores inteligentes premium."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span
+          >Tecnologia de ponta • Design minimalista • Performance premium</span
+        >
+        <span class="topbar-right">REAL MASTER</span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="topo">
+      <div class="container header-inner">
+        <button
+          class="icon-btn burger"
+          id="burger"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <a class="logo" href="#topo" aria-label="Real Master - Início">
+          <!-- caso queira usar logo depois -->
+          <!--
+        <img src="./assets/logo.png" alt="Real Master">
+        -->
+
+          <span class="logo-text">REAL MASTER</span>
+        </a>
+
+        <div class="search">
+          <span class="search-ico">⌕</span>
+
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Estou procurando por carregadores, cabos, suportes..."
+          />
+
+          <button class="search-btn" id="searchBtn">Buscar</button>
+        </div>
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="nav container" aria-label="Categorias">
+        <a class="nav-hot" href="#ofertas"> Promoções </a>
+
+        <a href="#carregadores"> Carregadores </a>
+
+        <a href="#suportes"> Suportes </a>
+
+        <a href="#acessorios"> Acessórios </a>
+
+        <a href="#colecao"> Coleções </a>
+
+        <a href="#contato"> Contato </a>
+      </nav>
+
+      <!-- NAV MOBILE DRAWER -->
+      <div class="drawer" id="drawer">
+        <div class="drawer-head">
+          <strong>Categorias</strong>
+
+          <button class="icon-btn" id="closeDrawer" aria-label="Fechar">
+            ✕
+          </button>
+        </div>
+
+        <a class="drawer-link nav-hot" href="#ofertas"> Promoções </a>
+
+        <a class="drawer-link" href="#carregadores"> Carregadores </a>
+
+        <a class="drawer-link" href="#suportes"> Suportes </a>
+
+        <a class="drawer-link" href="#acessorios"> Acessórios </a>
+
+        <a class="drawer-link" href="#colecao"> Coleções </a>
+
+        <a class="drawer-link" href="#contato"> Contato </a>
+
+        <div class="drawer-cta">
+          <a class="btn" target="_blank" href="#"> Atendimento WhatsApp </a>
+        </div>
+      </div>
+
+      <div class="drawer-overlay" id="drawerOverlay"></div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="carousel" id="carousel">
+          <div class="slides" id="slides">
+            <!-- SLIDE 1 -->
+            <article class="slide active">
+              <div class="slide-media">
+                <img
+                  src="./assets/slide-catalogo.png"
+                  alt="Real Master Banner"
+                />
+              </div>
+
+              <div class="slide-content">
+                <p class="chip chip-light">Premium Tech</p>
+
+                <h1>MASTER OF TECHNOLOGY</h1>
+
+                <p>
+                  Tecnologia premium, design moderno e acessórios inteligentes
+                  para elevar sua experiência.
+                </p>
+
+                <div class="slide-actions">
+                  <a class="btn" href="#novidades"> Explorar coleção </a>
+
+                  <a class="btn btn-ghost" target="_blank" href="#">
+                    Falar com especialista
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- SLIDE 2 -->
+            <article class="slide">
+              <div class="slide-media">
+                <img
+                  src="./assets/slide-carregador.png"
+                  alt="Fast Charge Real Master"
+                />
+              </div>
+
+              <div class="slide-content">
+                <p class="chip">Ultra Fast</p>
+
+                <h1>Potência e velocidade</h1>
+
+                <p>
+                  Carregadores inteligentes com tecnologia de proteção avançada
+                  e carregamento ultra rápido.
+                </p>
+
+                <div class="slide-actions">
+                  <a class="btn" href="#carregadores"> Ver carregadores </a>
+
+                  <a class="btn btn-ghost" href="#novidades"> Ver novidades </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- SLIDE 3 -->
+            <article class="slide">
+              <div class="slide-media">
+                <img
+                  src="./assets/slide-expositor.png"
+                  alt="Smart Stand Real Master"
+                />
+              </div>
+
+              <div class="slide-content">
+                <p class="chip">Setup Premium</p>
+
+                <h1>Design minimalista</h1>
+
+                <p>
+                  Suportes e acessórios criados para setups modernos e ambientes
+                  tecnológicos premium.
+                </p>
+
+                <div class="slide-actions">
+                  <a class="btn" href="#suportes"> Ver suportes </a>
+
+                  <a class="btn btn-ghost" href="#acessorios">
+                    Ver acessórios
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="car-btn prev" id="prev" aria-label="Anterior">
+            ‹
+          </button>
+
+          <button class="car-btn next" id="next" aria-label="Próximo">›</button>
+
+          <div
+            class="dots"
+            id="dots"
+            aria-label="Indicadores do carrossel"
+          ></div>
+        </div>
+
+        <!-- HERO SIDE -->
+        <aside class="hero-side">
+          <div class="side-card">
+            <h3>Atendimento especializado</h3>
+
+            <p class="muted">
+              Tire dúvidas técnicas e receba ajuda para escolher o acessório
+              ideal.
+            </p>
+
+            <a class="btn" href="https://wa.me/5581999999999" target="_blank">
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <div class="side-card light">
+            <h3>Garantia Real Master</h3>
+
+            <p class="muted">
+              Produtos premium com acabamento sofisticado e alta durabilidade.
+            </p>
+
+            <a class="link" href="#contato"> Ver mais → </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div class="strip-item">
+          <strong>⚡ Fast Charge</strong>
+          <span>carregamento rápido</span>
+        </div>
+
+        <div class="strip-item">
+          <strong>🛡️ Proteção</strong>
+          <span>segurança inteligente</span>
+        </div>
+
+        <div class="strip-item">
+          <strong>💎 Premium</strong>
+          <span>acabamento sofisticado</span>
+        </div>
+
+        <div class="strip-item">
+          <strong>🚀 Performance</strong>
+          <span>alta eficiência</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARREGADORES -->
+    <section class="section section-soft" id="carregadores">
+      <div class="container">
+        <div class="section-head">
+          <h2>Carregadores</h2>
+          <span class="muted">
+            Potência e velocidade para todos os dispositivos
+          </span>
+        </div>
+
+        <div class="grid grid-3">
+          <article
+            class="product"
+            data-name="Kit Carregador Residencial"
+            data-price="29,99"
+            data-cat="carregadores"
+            data-img="./assets/kit-residencial-c.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/kit-residencial-c.jpeg"
+                alt="Kit Carregador Residencial"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Kit Carregador Residencial</h3>
+
+              <p class="muted">USB-C • Ultra rápido</p>
+
+              <div class="prow">
+                <span class="price">R$ 29,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Kit Carregador Veicular"
+            data-price="29,99"
+            data-cat="carregadores"
+            data-img="./assets/Kit-carregador-veicular.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/Kit-carregador-veicular.jpeg"
+                alt="KitCarregador Veicular"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Kit Carregador Veicular</h3>
+
+              <p class="muted">Lightining • Turbo</p>
+
+              <div class="prow">
+                <span class="price">R$ 29,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Kit Carregador Veicular"
+            data-price="34,99"
+            data-cat="carregadores"
+            data-img="./assets/Kit-carregador-veicular.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/kit-carregador-veicular-c.jpeg"
+                alt="Kit Carregador Veicular"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Kit Carregador Veicular</h3>
+
+              <p class="muted">USB-C • Ultra rápido</p>
+
+              <div class="prow">
+                <span class="price">R$ 34,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Kit Carregador Residencial"
+            data-price="29,99"
+            data-cat="carregadores"
+            data-img="./assets/Kit-carregador-veicular.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/kit-carregador-residencialilithing.jpeg"
+                alt="KitCarregador residencial ligthin"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Kit Carregador Residencial</h3>
+
+              <p class="muted">Lightining • Ultra rápido</p>
+
+              <div class="prow">
+                <span class="price">R$ 29,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOVIDADES -->
+    <section class="section" id="novidades">
+      <div class="container">
+        <div class="section-head">
+          <h2>Cabos Premium</h2>
+          <a class="link" href="#colecao">Ver tudo →</a>
+        </div>
+
+        <div class="grid" id="productsGrid">
+          <article
+            class="product"
+            data-name="Cabo USB lightning"
+            data-price="19,99"
+            data-cat="Cabos"
+            data-img="./assets/cabo1m-carregadorlight.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/cabo1m-carregadorlight.jpeg"
+                alt="Cabo USB lightning"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Cabo Usb Lightning</h3>
+
+              <p class="muted">Alta Velocidade • 1 Metro</p>
+
+              <div class="prow">
+                <span class="price">R$ 19,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Cabo C pra C"
+            data-price="24,99"
+            data-cat="Cabos"
+            data-img="./assets/cabo1m-carregadorlight.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/cabo1m-carregadorlight.jpeg"
+                alt="Cabo C pra C"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Cabo C pra C</h3>
+
+              <p class="muted">Ultra rapido • 1 Metro</p>
+
+              <div class="prow">
+                <span class="price">R$ 24,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Cabo USB pra C"
+            data-price="19,99"
+            data-cat="Cabos"
+            data-img="./assets/cabo1m-carregadorlight.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/cabo1m-carregadorlight.jpeg"
+                alt="Cabo USB pra C"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Cabo Usb pra C</h3>
+
+              <p class="muted">Alta Velocidade • 1 Metro</p>
+
+              <div class="prow">
+                <span class="price">R$ 19,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Cabo Usb Lightning"
+            data-price="19,99"
+            data-cat="Cabos"
+            data-img="./assets/cabo1m-carregadorlight.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/cabo1m-carregadorlight.jpeg"
+                alt="Cabo Usb Lightning"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Cabo Usb Lightning</h3>
+
+              <p class="muted">Alta Velocidade • 1 Metro</p>
+
+              <div class="prow">
+                <span class="price">R$ 19,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Cabo Nylon Lightning"
+            data-price="29,99"
+            data-cat="Cabos"
+            data-img="./assets/cabo3m-usblight.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/cabo3m-usblight.jpeg"
+                alt="Cabo Nylon Lightning"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Cabo Nylon Lightning</h3>
+
+              <p class="muted">Nylon • 3 Metro</p>
+
+              <div class="prow">
+                <span class="price">R$ 29,99</span>
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACESSÓRIOS -->
+
+    ]
+    
+    <!-- ACESSÓRIOS -->
+    <section class="section section-soft" id="acessorios">
+      <div class="container">
+        <div class="section-head">
+          <h2>Acessórios</h2>
+          <span class="muted"> Performance e estilo no seu setup </span>
+        </div>
+
+        <div class="grid grid-3">
+          <article
+            class="product"
+            data-name="Fone Plug Azul"
+            data-price="14,99"
+            data-cat="Acessórios"
+            data-img="./assets/fone-azul.jpeg"
+          >
+            <div class="pimg">
+              <img src="./assets/fone-azul.jpeg" alt="Fone Plug Azul" />
+            </div>
+
+            <div class="pinfo">
+              <h3>Fone Plug</h3>
+
+              <p class="muted">Alta resistência • Azul</p>
+
+              <div class="prow">
+                <span class="price">R$ 14,99</span>
+
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Fone Plug Branco"
+            data-price="14,99"
+            data-cat="Acessórios"
+            data-img="./assets/fone-branco.jpeg"
+          >
+            <div class="pimg">
+              <img src="./assets/fone-branco.jpeg" alt="Fone Plug Branco" />
+            </div>
+
+            <div class="pinfo">
+              <h3>Fone Plug</h3>
+
+              <p class="muted">Alta resistência • Branco</p>
+
+              <div class="prow">
+                <span class="price">R$ 14,99</span>
+
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Fone de Ouvido sem Fio"
+            data-price="49,99"
+            data-cat="Acessórios"
+            data-img="./assets/fone-bluetho.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/fone-bluetho.jpeg"
+                alt="Fone de Ouvido sem Fio"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Fone de Ouvido sem Fio</h3>
+
+              <p class="muted">Caixa de carregamento • Bluetooth</p>
+
+              <div class="prow">
+                <span class="price">R$ 49,99</span>
+
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Fonte Carregador USB"
+            data-price="19,99"
+            data-cat="Acessórios"
+            data-img="./assets/fonte-carregador-c.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/fonte-carregador-c.jpeg"
+                alt="Fonte Carregador USB"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Fonte Carregador USB</h3>
+
+              <p class="muted">Alta qualidade • Residencial</p>
+
+              <div class="prow">
+                <span class="price">R$ 19,99</span>
+
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="Fonte Veicular USB"
+            data-price="19,99"
+            data-cat="Acessórios"
+            data-img="./assets/fonte-carregador-veicularusb.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/fonte-carregador-veicularusb.jpeg"
+                alt="Fonte Veicular USB"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>Fonte Veicular USB</h3>
+
+              <p class="muted">Alta qualidade • Veicular</p>
+
+              <div class="prow">
+                <span class="price">R$ 19,99</span>
+
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="product"
+            data-name="PowerBank 10.000mAh"
+            data-price="89,99"
+            data-cat="Acessórios"
+            data-img="./assets/powerbank-10.000mah.jpeg"
+          >
+            <div class="pimg">
+              <img
+                src="./assets/powerbank-10.000mah.jpeg"
+                alt="PowerBank 10.000mAh"
+              />
+            </div>
+
+            <div class="pinfo">
+              <h3>PowerBank 10.000mAh</h3>
+
+              <p class="muted">Alta capacidade • Portátil</p>
+
+              <div class="prow">
+                <span class="price">R$ 89,99</span>
+
+                <button class="add" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    ```
+
+    <!-- OFERTAS -->
+    <section class="section section-soft" id="ofertas">
+      <div class="container">
+        <div class="section-head">
+          <h2>Promoções</h2>
+          <span class="muted"> Ofertas especiais Real Master </span>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="deal">
+            <strong>Até 40% OFF</strong>
+            <span class="muted">itens selecionados</span>
+          </div>
+
+          <div class="deal">
+            <strong>Frete Especial</strong>
+            <span class="muted">consulte condições</span>
+          </div>
+
+          <div class="deal">
+            <strong>Atendimento</strong>
+            <span class="muted">rápido no WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container contact">
+        <div class="contact-card">
+          <h2>Atendimento</h2>
+
+          <p class="muted">
+            Fale com nossa equipe especializada e tire dúvidas rapidamente.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn" target="_blank" href="#"> WhatsApp </a>
+
+            <a class="btn btn-ghost" href="#"> E-mail </a>
+          </div>
+
+          <p class="muted small">Seg–Sáb • 09h–18h</p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Real Master Technology</h2>
+
+          <p class="muted">Adicione aqui o endereço da loja ou showroom.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>
+          © <span id="year"></span> REAL MASTER • Master of Technology
+        </span>
+
+        <a class="link" href="#topo"> Voltar ao topo ↑ </a>
+      </div>
+    </footer>
+
+    <!-- WHATS FLOAT -->
+    <a class="wa-float" target="_blank" href="#" aria-label="WhatsApp"> 💬 </a>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-overlay" id="modalOverlay"></div>
+
+      <div
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mTitle"
+      >
+        <button
+          class="icon-btn modal-close"
+          id="modalClose"
+          aria-label="Fechar"
+        >
+          ✕
+        </button>
+
+        <div class="modal-grid">
+          <div class="modal-media">
+            <img id="mImg" alt="" />
+          </div>
+
+          <div class="modal-content">
+            <h3 id="mTitle">Produto</h3>
+
+            <p class="muted" id="mDesc">
+              Produto premium Real Master com acabamento sofisticado.
+            </p>
+
+            <div class="modal-row">
+              <div class="pill">
+                <strong>Preço:</strong>
+                <span id="mPrice"></span>
+              </div>
+
+              <div class="pill">
+                <strong>Garantia:</strong>
+                90 dias
+              </div>
+            </div>
+
+            <div class="modal-actions">
+              <a class="btn" id="mWhats" target="_blank">
+                Comprar no WhatsApp
+              </a>
+
+              <button class="btn btn-ghost" id="modalBack" type="button">
+                Voltar
+              </button>
+            </div>
+
+            <p class="muted small">
+              *Valores podem variar conforme disponibilidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
